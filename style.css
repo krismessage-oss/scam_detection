@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+body{margin:0;background:#f3f6fb;color:#172033;font-family:Arial,sans-serif}
+header{background:#142d4e;color:white;padding:22px 18px}
+.brand{font-size:23px;font-weight:700}.sub{font-size:12px;color:#cbd5e1;margin-top:5px}
+main{padding:15px;max-width:760px;margin:auto}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.stat{background:white;border-radius:12px;padding:13px 6px;text-align:center;box-shadow:0 2px 8px #1720330b}
+.stat b{display:block;font-size:22px}.stat span{font-size:11px;color:#64748b}
+button{border:0;border-radius:9px;padding:12px 14px;font-weight:600}
+.full{width:100%;margin:5px 0}.primary{background:#2563eb;color:white}.secondary{background:#e5edf8;color:#17365c}
+.danger{background:#fee2e2;color:#b91c1c}.small{padding:9px 11px;font-size:12px}
+.status{font-size:12px;color:#64748b;padding:8px 2px}
+nav{display:flex;gap:5px;overflow-x:auto;margin:12px 0}
+.tab{background:#e7edf5;color:#334155;white-space:nowrap;padding:9px 12px}.tab.active{background:#142d4e;color:white}
+.toolbar{display:flex;justify-content:space-between;gap:8px;margin:10px 0}
+.card{background:white;border-radius:12px;padding:13px;margin:9px 0;box-shadow:0 2px 8px #1720330b}
+.row{display:flex;gap:10px;align-items:flex-start}.row input{width:18px;height:18px;margin-top:3px}
+.content{min-width:0;flex:1}.sender{font-weight:700;font-size:14px}
+.body{font-size:13px;line-height:1.45;margin:7px 0;overflow-wrap:anywhere;color:#334155}
+.meta{font-size:11px;color:#64748b}.pill{font-size:11px;font-weight:700;padding:4px 8px;border-radius:20px;display:inline-block}
+.Legitimate{background:#dcfce7;color:#166534}.Spam{background:#fef3c7;color:#92400e}
+.Scam{background:#fee2e2;color:#991b1b}.Review,.Unclassified{background:#ede9fe;color:#5b21b6}
+.foot{font-size:11px;color:#64748b;line-height:1.5;margin-top:20px}
+.empty{padding:30px;text-align:center;color:#64748b;background:white;border-radius:12px}

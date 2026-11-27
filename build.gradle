@@ -1,0 +1,24 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+android {
+    namespace 'com.smsshield'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.smsshield'
+        minSdk 23
+        targetSdk 28
+        versionCode 1
+        versionName '0.1-test'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+chaquopy {
+    defaultConfig { version = "3.11" }
+}

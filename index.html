@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SMS Shield</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">🛡️ SMS Shield</div><div class="sub">Message protection • Test prototype</div></header>
+<main>
+<section class="stats">
+<div class="stat"><b id="total">0</b><span>Total</span></div>
+<div class="stat"><b id="spam">0</b><span>Spam</span></div>
+<div class="stat"><b id="scam">0</b><span>Scam</span></div>
+<div class="stat"><b id="review">0</b><span>Review</span></div>
+</section>
+<button class="primary full" onclick="requestRole()">Set as default SMS app</button>
+<button class="secondary full" onclick="scanMessages()">Scan existing messages</button>
+<div id="status" class="status">Set the SMS role, then scan your inbox.</div>
+<nav>
+<button class="tab active" onclick="showMessages('All',this)">All</button>
+<button class="tab" onclick="showMessages('Legitimate',this)">Real</button>
+<button class="tab" onclick="showMessages('Spam',this)">Spam</button>
+<button class="tab" onclick="showMessages('Scam',this)">Scam</button>
+<button class="tab" onclick="showMessages('Review',this)">Review</button>
+<button class="tab" onclick="showMessages('Unclassified',this)">New</button>
+</nav>
+<div class="toolbar"><button class="small secondary" onclick="selectVisible()">Select visible</button><button class="small danger" onclick="deleteSelected()">Delete selected</button></div>
+<div id="messageList"></div>
+<p class="foot">Experimental detection. Review messages before deletion. Only classified Spam/Scam can be selected for deletion.</p>
+</main><script src="script.js"></script>
+</body></html>
